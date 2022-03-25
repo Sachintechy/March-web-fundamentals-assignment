@@ -1,0 +1,62 @@
+ h1{
+   color: blue;
+   text-align: center;
+   font-size: 3vw;
+   text-decoration: underline;
+ }
+ .survay_form {
+   /* border: 2px solid red; */
+   width: 70%;
+   margin: auto;
+   background-color: violet;
+    
+ }
+
+ .survay_form>.form_fields {
+   display: grid;
+   grid-template-columns: auto auto;
+   padding: 5%;
+   padding-bottom: 0%;
+ }
+label{
+  font-weight: bold;
+  font-size: 2.5vw;
+}
+ 
+ .survay_form>.form_fields>.attributes {
+   margin: 3% 2%;
+ }
+ 
+ .survay_form>.form_fields>.attributes>.input_field {
+   width: 90%;
+   padding: 2%;
+   height: 30px;
+   font-size: 2vw;
+  border-radius: 8px;
+ }
+
+ .survay_form>.form_fields>.attributes>.gender {
+    width: 20px;
+    height: 20px;
+ }
+
+ .survay_form>.sec_a {
+   display: grid;
+   grid-template-columns: auto;
+   padding: 0% 6%;
+ }
+
+ .survay_form>.check {
+   padding: 2% 5%;
+ }
+
+ .survay_form>.btn {
+   padding: 2% 5%;
+   text-align: center;
+ }
+
+ .survay_form>.btn>button {
+   padding: 2% 5%;
+   background-color: greenyellow;
+   border-radius: 5px;
+ }
