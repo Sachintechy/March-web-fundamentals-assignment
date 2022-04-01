@@ -1,0 +1,12 @@
+body{
+    background-color: #e3516e;
+    padding: 10%;
+}
+.container{
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background-image: conic-gradient(#fade8b  0deg,#fade8b 90deg,#e3516e 90deg,#e3516e 180deg
+    ,#f7f3d7 180deg,#f7f3d7 270deg,#51b5a9 270deg);
+    border-radius: 50%;
+}
