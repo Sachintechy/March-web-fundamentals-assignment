@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row1 row">
+            <label for="field1">First No: </label>
+            <input type="number" name="field1" id="field1" class="input1" placeholder="Input Fist No" />
+        </div>
+        <div class="row2 row">
+            <label for="field2">Second No: </label>
+            <input type="number" id="field2" class="input1" placeholder="Input Secoond No" />
+        </div>
+        <div class="row3 row">
+            <label for="field3">Third No: </label>
+            <input type="number" id="field3" class="input1" placeholder="Input Third No" />
+        </div>
+        <div class="row3 row">
+            <label for="field3">Minimum No  </label>
+             <span id="minimum"></span>
+        </div>
+        <div class="row4 row">
+            <button onclick="myFuction()">Check minimum no</button>
+        </div>
+
+    </div>
+
+    <script >
+        function myFuction() {
+    var a = document.getElementById("field1").value;
+    var b = document.getElementById("field2").value;
+    var c = document.getElementById("field3").value;
+    if (a <= b && a <= c) {
+        alert("Minimum No is "+a);
+        document.getElementById("minimum").innerHTML = (a)
+    } else if (b <= a && b <= c) {
+        alert("Minimum No is "+b);
+        document.getElementById("minimum").innerHTML = (b)
+    } else {
+        alert("Minimum No is "+c);
+        document.getElementById("minimum").innerHTML = (c)
+    }
+}
+    </script>
+</body>
+
+</html>

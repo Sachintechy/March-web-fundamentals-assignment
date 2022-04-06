@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row1 row">
+            <label for="field1">Enter the character: </label>
+            <input type="text" minlength="1" maxlength="1" name="field1" id="field1" class="input1" placeholder="Input Fist No" />
+        </div>
+         
+        <div class="row3 row">
+            <label for="field3" >character Detaild:>>> </label><br />
+             <span id="minimum"></span>
+        </div>
+        <div class="row4 row">
+            <button onclick="myFuction()">Submit</button>
+        </div>
+
+    </div>
+
+    <script >
+        function myFuction() {
+    var ch = document.getElementById("field1").value;
+
+		if (ch >= "A" && ch <= "Z") {
+          if( ch == "A" || ch=="E" || ch=="I" || ch=="O" || ch=="U"){
+            document.getElementById("minimum").innerHTML = "Entered text in Capital Character and its vowel"
+          }else{
+            document.getElementById("minimum").innerHTML = "Entered text in Capital Character and its not vowel"
+          }
+		 }
+		else if (ch >= "a" && ch <= "z"){
+            if( ch == "a" || ch=="e" || ch=="i" || ch=="o" || ch=="u"){
+            document.getElementById("minimum").innerHTML = "Entered text in Small Character and its vowel"
+          }else{
+            document.getElementById("minimum").innerHTML = "Entered text in Small Character and its not vowel"
+          }
+		 }
+		else{  document.getElementById("minimum").innerHTML = "Entered text is not  Character"}
+	}
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    width:600px;
+    margin:auto;
+    padding: 20px;
+}
+.row{
+    padding: 10px;
+}
+.row4{
+    grid-row: 3;
+    grid-column: 1 /span 2;
+}
+#minimum{
+    color: red;
+}
