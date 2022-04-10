@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: auto;
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: center;
+            
+        }
+        input{
+            padding: 5px 10px ;
+            margin: 0px 10px;
+        }
+        button{
+            padding: 5px 10px;
+        }
+    </style>
+    
+<body>
+    <div class="container">
+        
+        <div><h3>DOM on-event handler</h3></div>
+        
+         <div>
+        <input id="input" placeholder="Input Here...." required>
+        <button onclick="myFuction()" type="submit">Submit</button>
+    </div>
+     
+    </div>
+     <script >
+        function myFuction(){
+      let inputData=document.getElementById("input").value;
+       console.log("inoput",inputData);
+        alert(inputData);
+}
+    </script>
+</head>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.container{
+    border: 2px solid green;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+li{
+    padding: 5px;
+    margin: 2px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#item1{
+    color: red;
+    background-color: greenyellow;
+}
+#item2{
+    color: rgb(24, 20, 6);
+    background-color: rgb(255, 106, 47);
+}
+#item3{
+    color: rgb(238, 241, 237);
+    background-color: rgb(47, 130, 255);
+}
+#item4{
+    color: rgb(218, 205, 30);
+    background-color: rgb(255, 47, 245);
+}
+#item5{
+    color: rgb(187, 89, 179);
+    background-color: rgb(47, 255, 220);
+}
