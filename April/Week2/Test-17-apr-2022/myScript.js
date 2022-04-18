@@ -25,25 +25,21 @@ function showData(userlist){
     tableRef.appendChild(tr);
      for(var i=0;i<userlist.length;i++){
         var tr=document.createElement('tr');
-        var th1=document.createElement('th');
-        var th2=document.createElement('th');
-        var th3=document.createElement('th');
-        var th4=document.createElement('th');
-        th1.innerText=userlist[i].first_name;
-        th2.innerText=userlist[i].last_name;
-        th3.innerText=userlist[i].email;
-        th4.innerHTML=`<img src=${userlist[i].avatar}>`;
-        tr.appendChild(th1);
-        tr.appendChild(th2);
-        tr.appendChild(th3);
-        tr.appendChild(th4);
+        var td1=document.createElement('td');
+        var td2=document.createElement('td');
+        var td3=document.createElement('td');
+        var td4=document.createElement('td');
+        td1.innerText=userlist[i].first_name;
+        td2.innerText=userlist[i].last_name;
+        td3.innerText=userlist[i].email;
+        td4.innerHTML=`<img src=${userlist[i].avatar}>`;
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
         tableRef.appendChild(tr);
-        console.log(th4);
      }
-    var div =document.getElementById('container');
-    console.log(div);
-    div.appendChild(tableRef);
-    // .appendChild(tableRef);
-    
+     document.querySelector("body").appendChild(tableRef);
+
 } 
 showData(userList)
