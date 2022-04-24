@@ -1,0 +1,32 @@
+body{
+    background-image: linear-gradient(red , green , blue);
+    object-fit: cover;
+}
+.base{ 
+    width: 80%;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 300px 300px 300px; 
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+     
+}
+.item{
+    padding: 10px;
+    margin: 2%;
+    text-align: center;
+    background-color:rgb(0, 0, 0,0.3)
+}
+.name{
+    font-weight: bold;
+}
+p{
+    color: white;
+}
+img{
+   width: 250px;
+   height: 250px;
+   object-fit: cover;
+   border-radius: 50%;
+}
